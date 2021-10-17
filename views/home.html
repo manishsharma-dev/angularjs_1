@@ -1,0 +1,17 @@
+<h1>Home Page</h1>
+<section ng-show="players.length">
+    <foreign-player players="players" title="'Foreign Players'">
+        Team CSK Foreign Players
+    </foreign-player>
+    <div class="content">
+        <h3>Indian Players</h3>
+        <div> Team CSK Indian Players</div>
+        <ul>
+            <li ng-repeat="player in indians | orderBy: order | filter : search" ng-show="player.fit">
+             <h3>{{player.name}} - {{player.cost | currency : '₹'}}</h3> 
+            <div class="remove" ng-click="removePlayer(player)">x</div>
+             <span>{{player.team}}</span>
+            </li>
+          </ul>
+    </div>
+</section>

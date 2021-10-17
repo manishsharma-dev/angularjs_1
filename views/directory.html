@@ -1,0 +1,21 @@
+<div class="content">
+    <button ng-click="order = 'name'">Order by Name</button>
+    <button ng-click="order = 'team'">Order by Team</button>
+    <div ng-controller="MainController">
+      <input type="text" ng-model="search" />
+      {{indian}}
+      <ul>
+        <li ng-repeat="player in players | orderBy: order | filter : search" ng-show="player.fit">
+         <h3>{{player.name}} - {{player.cost | currency : '₹'}}</h3> 
+        <div class="remove" ng-click="removePlayer(player)">x</div>
+         <span>{{player.team}}</span>
+        </li>
+      </ul>
+      <form ng-submit="addNinja()">
+        <input type="text" placeholder="name" ng-model="newPlayer.name" />
+        <input type="text" placeholder="team" ng-model="newPlayer.team" />
+        <input type="text" placeholder="cost" ng-model="newPlayer.cost" />
+        <input type="submit" value="Add new Player" />
+      </form>
+    </div> 
+  </div>   

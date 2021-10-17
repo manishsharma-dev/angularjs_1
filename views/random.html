@@ -1,0 +1,11 @@
+<div class="content">
+    <h3>Foreign Players</h3>
+    <div ng-transclude> </div>
+    <ul>
+        <li ng-repeat="player in foreign | orderBy: order | filter : search" ng-show="player.fit">
+         <h3>{{player.name}} - {{player.cost | currency : '₹'}}</h3> 
+        <div class="remove" ng-click="removePlayer(player)">x</div>
+         <span>{{player.team}}</span>
+        </li>
+      </ul>
+</div>

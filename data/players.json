@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Dhoni",
+		"team": "India",
+		"cost": 10,
+		"fit": true
+	},
+	{
+		"name": "Suresh Raina",
+		"team": "India",
+		"cost": 8.5,
+		"fit": false
+	},
+	{
+		"name": "Ambati Rayudu",
+		"team": "India",
+		"cost": 8.5,
+		"fit": true
+	},
+	{
+		"name": "Moeen Ali",
+		"team": "England",
+		"cost": 9,
+		"fit": true
+	},
+	{
+		"name": "Chahar",
+		"team": "India",
+		"cost": 8.5,
+		"fit": true
+	},
+	{
+		"name": "Faf du Plessis",
+		"team": "South Africa",
+		"cost": 9.5,
+		"fit": true
+	},
+	{
+		"name": "Ruturaj Gaikwad",
+		"team": "India",
+		"cost": 9,
+		"fit": true
+	},
+	{
+		"name": "Dwayne Bravo",
+		"team": "West Indies",
+		"cost": 9.5,
+		"fit": true
+	}
+]
